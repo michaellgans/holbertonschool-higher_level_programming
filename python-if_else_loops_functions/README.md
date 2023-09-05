@@ -27,4 +27,5 @@ else:
 
 https://www.geeksforgeeks.org/python-random-module/
 https://www.geeksforgeeks.org/python3-if-if-else-nested-if-if-elif-statements/
-
+https://www.geeksforgeeks.org/program-to-print-alphabets-from-a-to-z-using-loop/
+https://www.geeksforgeeks.org/ascii-table/
