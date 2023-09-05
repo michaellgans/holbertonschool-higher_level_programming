@@ -1,0 +1,6 @@
+#!/usr/bin/python3
+
+VAR = "1234567890"
+print(f"This prints the first five: ", VAR[0:5])
+print(f"This prints 1-5: ", VAR[:5])
+print(f"This prints 6-0: ", VAR[5:])
