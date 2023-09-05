@@ -1,5 +1,5 @@
 # Python-Hello_World
-Hello everyone!
+Hello everyone! <br>
 These are the notes I've taken while doing this project.  
 Please don't hesitate to reach out if you need assistance.
 
@@ -22,3 +22,32 @@ Please don't hesitate to reach out if you need assistance.
 print(f"{VAR:.2f}")
 ```
 
+## How to print a specific number of characters:
+
+>- Keep in mind that this is a zero based index.
+>- You can access a range of characters by using `[start:stop]`
+```
+print(VAR[0:4])
+```
+>- This would print the first FIVE characters of what is stored inside of VAR.
+
+## How to concat in python:
+
+>- To join two variables together, use `+`.
+>- Play around with the spacing.
+
+```
+str1 = "Apples"
+str2 = "Bananas"
+str1 = str1 + str2
+print(f"Output: {str1}")
+```
+Output: ApplesBananas
+
+```
+str1 = "Apples"
+str2 = "Bananas"
+str1 = str1 + " " + str2
+print(f"Output: {str1}")
+```
+Output: Apples Bananas
