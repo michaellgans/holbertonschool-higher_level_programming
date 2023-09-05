@@ -1,4 +1,4 @@
-# Python-if/else, loops, functions
+# Python-If/Else, Loops, Functions
 
 Hi there! <br>
 These are my notes I took while I was working through his project. <br>
@@ -12,7 +12,7 @@ When using modules in python, the syntax is name_of_module.function_name()
 
 >- randint() - returns a random integer within the range given.
 
-## If/Else Statements
+## If/Else Statement Syntax
 
 ```
 if statement:
@@ -26,3 +26,5 @@ else:
 ##### Resources
 
 https://www.geeksforgeeks.org/python-random-module/
+https://www.geeksforgeeks.org/python3-if-if-else-nested-if-if-elif-statements/
+
