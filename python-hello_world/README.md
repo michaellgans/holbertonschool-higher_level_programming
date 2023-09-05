@@ -32,9 +32,9 @@ print(f"This prints the first five: ", VAR[0:5])
 print(f"This prints 1-5: ", VAR[:5])
 print(f"This prints 6-0: ", VAR[5:])
 ```
-This prints the first five:  12345
-This prints 1-5:  12345
-This prints 6-0:  67890
+This prints the first five:  12345 <br>
+This prints 1-5:  12345 <br>
+This prints 6-0:  67890 <br>
 
 ## How to concat in python:
 
