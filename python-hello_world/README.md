@@ -29,7 +29,7 @@ print(f"{VAR:.2f}")
 ```
 print(VAR[0:4])
 ```
->- This would print the first FIVE characters of what is stored inside of VAR.
+This would print the first FIVE characters of what is stored inside of VAR.
 
 ## How to concat in python:
 
