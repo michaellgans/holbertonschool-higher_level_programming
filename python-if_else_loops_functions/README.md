@@ -12,6 +12,17 @@ When using modules in python, the syntax is name_of_module.function_name()
 
 >- randint() - returns a random integer within the range given.
 
+## If/Else Statements
+
+```
+if statement:
+   do action
+elif statement:
+   do action
+else:
+   do action
+```
+
 ##### Resources
 
 https://www.geeksforgeeks.org/python-random-module/
