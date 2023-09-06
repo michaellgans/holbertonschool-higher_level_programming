@@ -1,16 +1,16 @@
 # Python-If/Else, Loops, Functions
 
-Hi there! <br>
+Hi there! :wave:<br>
 These are my notes I took while I was working through his project. <br>
 If you need assistance, please don't hesitate to reach out to me on slack. <br>
 
 ## Modules
 
-When using modules in python, the syntax is name_of_module.function_name()
+When using modules in python, the syntax is `name_of_module.function_name()`
 
 ### Random
 
->- randint() - returns a random integer within the range given.
+>- `randint()` - returns a random integer within the range given.
 
 ## If/Else Statement Syntax
 
@@ -36,7 +36,7 @@ for x in range(start, stop):
 >- `hex()` = Takes in a number and returns the hexidecimal number.
 >- `chr()` = Takes in a number and returns the ASCII character. 
 
-##### Resources
+### Resources
 
 https://www.geeksforgeeks.org/python-random-module/
 https://www.geeksforgeeks.org/python3-if-if-else-nested-if-if-elif-statements/
