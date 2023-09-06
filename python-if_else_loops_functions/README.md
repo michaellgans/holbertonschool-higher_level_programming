@@ -30,6 +30,12 @@ for x in range(start, stop):
    do action
 ```
 
+## FYSK (Functions You Should Know)
+
+>- `ord()` = Takes in a character and returns the ASCII number.
+>- `hex()` = Takes in a number and returns the hexidecimal number.
+>- `chr()` = Takes in a number and returns the ASCII character. 
+
 ##### Resources
 
 https://www.geeksforgeeks.org/python-random-module/
