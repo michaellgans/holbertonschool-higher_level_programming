@@ -23,6 +23,13 @@ else:
    do action
 ```
 
+## For Loops Syntax
+
+```
+for x in range(start, stop):
+   do action
+```
+
 ##### Resources
 
 https://www.geeksforgeeks.org/python-random-module/
