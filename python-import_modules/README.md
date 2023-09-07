@@ -31,13 +31,21 @@ The following are differences between Python and C
 - No curly braces to show code blocks
 - and = and :smile:
 - or = or
-- Object Oriented
+- Object Oriented Proramming (OOP)
 - Variables or type of variable is not declared `c = 10`
 - Pointers are not accessable
 - Data structures are built in
 - `.py` extension
 - Slower than C because it compiles for you
   - Needs an interpereter!
+
+### Bash
+- Is not a programming language
+  - It's a command line interpereter
+- Better with smaller programs
+- Does not support Object Oriented Programming (OOP)
+- Doesn't require 3rd party applications to be installed
+- Relatively faster than Python
 
 ## Importing Syntax
 
@@ -58,3 +66,4 @@ if __name__ == "__main__":
 
 ### Resources
 https://www.geeksforgeeks.org/difference-between-c-and-python/
+https://www.geeksforgeeks.org/difference-between-python-and-bash/
