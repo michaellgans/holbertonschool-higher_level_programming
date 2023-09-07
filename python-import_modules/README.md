@@ -4,48 +4,22 @@ Hi there! :wave: <br>
 These are the notes I took while working through this project. <br>
 If you have questions, don't hesitate to reach out to me on slack! <br>
 
-## Python vs C
-The following are differences between Python and C
+## Python vs C vs Bash
 
-### C
-- Compiled Language
-  - Needs to be compiled with GCC.
-- Syntax Heavy
-- Comments: */ this is a comment */
-- ; after loops
-- If syntax `if(), else if(), else()`
-- Use `{}` to show code blocks
-- and = &&
-- or = ||
-- Variables are declared and type is declared`char c;`
-- Pointers are accessable
-- Data structures are explicitly stated
-- `.c` extension
-- Faster than Python
-
-### Python
-- Interpreted Language
-- Comments `#thisisacomment`
-- : after loops
-- If syntax `if, elif, else :`
-- No curly braces to show code blocks
-- and = and :smile:
-- or = or
-- Object Oriented Proramming (OOP)
-- Variables or type of variable is not declared `c = 10`
-- Pointers are not accessable
-- Data structures are built in
-- `.py` extension
-- Slower than C because it compiles for you
-  - Needs an interpereter!
-
-### Bash
-- Is not a programming language
-  - It's a command line interpereter
-- Better with smaller programs
-- Does not support Object Oriented Programming (OOP)
-- Doesn't require 3rd party applications to be installed
-- Relatively faster than Python
+| Python | C | Bash |
+|:-|:-|:-|
+| Interpereted language | Compiled language | Not a programming Language |
+| Easier to write | Requires more syntax | Simple to write |
+| Comments: `/* this is a comment */` | Comments: `#this is a comment` | Comments: `#this is a comment` |
+| Loop Syntax `for statement:` | Loop Syntax `for(statement) {` | N/A |
+| If Syntax `if statement:` | If Syntax `if(statement) {` | N/A |
+| Indicate code blocks with indents | Indicate code blocks with `{}` | N/A |
+| and = `and` or = `or` | and = `&&` or = `\|\|` | N/A |
+| Variables and their types are not declared | Variables and types are declared | N/A |
+| Pointers aren't accessable | Pointers are accessable | N/A |
+| Data structures are built in | Data structures are explicity stated | N/A |
+| File extension `.py` | File extension `.c` | File extension `.txt` |
+| Slower to run | Faster to run | Faster than Python |
 
 ## Importing Syntax
 
@@ -65,5 +39,6 @@ if __name__ == "__main__":
 ```
 
 ### Resources
-https://www.geeksforgeeks.org/difference-between-c-and-python/
-https://www.geeksforgeeks.org/difference-between-python-and-bash/
+https://www.geeksforgeeks.org/difference-between-c-and-python/ <br>
+https://www.geeksforgeeks.org/difference-between-python-and-bash/ <br>
+https://markdown.land/markdown-table <br>
