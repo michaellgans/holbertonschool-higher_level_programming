@@ -7,4 +7,4 @@ def element_at(my_list, idx):
     elif idx not in range(len(my_list)):
         return None
     else:
-        return idx
+        return my_list[idx]
