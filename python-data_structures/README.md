@@ -14,11 +14,23 @@ for VAR in range(len(LIST)):
 
 ## Tuples
 
+## In vs Not In
+-`if x in range(a, b)` - Is x in the range of a through b?
+-`if x not in range(a, b)` - Is x not in the range of a through b?
+
+## FYSK (Functions You Should Know)
+
+Name | Syntax | Use Case
+:---|:---|:---
+Length | `len()` | Returns the length of...
+
+
 ## Syntax Table
 
 Name | Syntax | Use Case | Resource
 :---|:---|:---|:---
 String Format Method | `print("{:d}".format(VAR))` | printing integers in string format | [Link](https://www.geeksforgeeks.org/python-string-format-method/)
+Range Function | `range(start, stop, step)` | define a range of numbers | [Link](https://www.geeksforgeeks.org/python-range-function/)
 
 
 ### Resources
