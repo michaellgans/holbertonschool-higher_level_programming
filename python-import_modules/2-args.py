@@ -3,18 +3,15 @@
 import sys #allows access to args
 
 if __name__ == "__main__":
-    args = sys.argv[1:] #ignores first argument, program name
-    y = 1
-    if len(args) == 0:
+    if len(sys.argv) == 1:
         x = 0
         print("{} arguments.".format(x)) #no arguments passed
-    elif len(args) == 1:
+    elif len(sys.argv) == 2:
         x = 1
         print("{} argument:".format(x)) #one argument passed
-        print("{}: {}".format(x, args[0])) #print single argument
+        print("{}: {}".format(x, sys.argv[1])) #print single argument
     else:
-        x = len(args)
+        x = len(sys.argv) - 1
         print("{} arguments:".format(x)) #more than one arguments passed
-        for x in args:
-            print("{}: {}".format(y, x)) #print each argument
-            y += 1
+        for y in range(1, len(sys.argv)):
+            print("{}: {}".format(y, sys.argv[y])) #print each argument
