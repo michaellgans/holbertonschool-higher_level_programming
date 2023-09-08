@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-
 import sys #allows access to command line args
-
 if __name__ == "__main__":
     if len(sys.argv) == 1:
         print("0 arguments.") #no arguments passed, only program name
