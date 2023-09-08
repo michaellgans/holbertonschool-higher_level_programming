@@ -31,22 +31,3 @@ git add .
 git commit -m "$M"
 git push
 ```
-
-# For the read-me-pros!
-
-## Lists
-#### Block Lists
->- Your text here
->- Your text here
-
-#### Lists/Sub-Lists
-- Your text here
-  - Your text here
-- Your text here
-
-## Tables
-Title | Of | Your | Table
-:--|:--:|--:|--
-Right aligned | Center aligned | Left aligned | Default
-Your text here | Your text here | Your text here | Your text here
-Your text here | Your text here | Your text here | Your text here
