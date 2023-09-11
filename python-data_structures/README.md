@@ -15,6 +15,13 @@ for VAR in range(len(LIST)):
 ```
 
 ## Tuples
+- A tuple with a single item inside it needs to have a , after the first entry.  Otherwise it's just a string.
+
+## Tuples vs List
+Concept | Tupple | List
+:---|:---|:---|:---
+Synax | `name()` | `name[]`
+Can you change them? | immutable | mutable
 
 ## In vs Not In
 -`if x in range(a, b)` - Is x in the range of a through b?
