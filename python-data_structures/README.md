@@ -25,9 +25,8 @@ for VAR in range(len(LIST)):
 Name | Syntax | Use Case | Resource
 :---|:---|:---|:---
 String Format Method | `print("{:d}".format(VAR))` | printing integers in string format | [Link](https://www.geeksforgeeks.org/python-string-format-method/)
-Range Function | `range(start, stop, step)` | define a range of numbers | [Link](https://www.geeksforgeeks.org/python-range-function/)
-Reverse Function | `reversed(sequence)` | reverse a list | [Link](https://www.geeksforgeeks.org/python-reversed-function/)
-Copy Function | 'copy(sequence)` or `sequence.copy()` | copies a list | [Link](https://www.w3schools.com/python/python_lists_copy.asp)
-List Function | 'list(sequence)` or `sequence.list()` | copies a list | [Link](https://www.w3schools.com/python/python_lists_copy.asp)
-
-### Resources
+Range | `range(start, stop, step)` | define a range of numbers | [Link](https://www.geeksforgeeks.org/python-range-function/)
+Reverse | `reversed(sequence)` | reverse a list | [Link](https://www.geeksforgeeks.org/python-reversed-function/)
+Copy | copy(sequence)` or `sequence.copy()` | copies a list | [Link](https://www.w3schools.com/python/python_lists_copy.asp)
+List | 'list(sequence)` or `sequence.list()` | copies a list | [Link](https://www.w3schools.com/python/python_lists_copy.asp)
+Translate | `translation = {ASCII: new ASCII}\n string.translate(translation)` | translates and ASCII character into a new ASCII character | [Link](https://www.geeksforgeeks.org/python-string-translate/)
