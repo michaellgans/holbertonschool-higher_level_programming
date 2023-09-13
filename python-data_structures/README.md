@@ -37,3 +37,5 @@ Reverse | `reversed(sequence)` | reverse a list | [Link](https://www.geeksforgee
 Copy | copy(sequence)` or `sequence.copy()` | copies a list | [Link](https://www.w3schools.com/python/python_lists_copy.asp)
 List | 'list(sequence)` or `sequence.list()` | copies a list | [Link](https://www.w3schools.com/python/python_lists_copy.asp)
 Translate | `translation = {ASCII: new ASCII}\n string.translate(translation)` | translates and ASCII character into a new ASCII character | [Link](https://www.geeksforgeeks.org/python-string-translate/)
+Append | | |
+Delete | `del` | |
