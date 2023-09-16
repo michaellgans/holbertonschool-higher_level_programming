@@ -6,7 +6,7 @@ class Square:
 
     Args:
         None
-    
+
     Returns:
         None
     """
