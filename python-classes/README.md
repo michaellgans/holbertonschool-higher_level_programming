@@ -128,3 +128,4 @@ Name | Syntax | Notes
 ---|---|---
 class | `class` | Creates a class
 empty block | `pass` | keeps a class open and empty
+check type | `isinstance(var, type)` | Checks if a variable is a specific data type
