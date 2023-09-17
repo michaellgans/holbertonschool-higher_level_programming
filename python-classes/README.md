@@ -12,16 +12,16 @@
     - Belong to the class as an "attribute"
 
 - **Instance** - "part of" a class.
-------------------------------------------------
+
 - **Fields** - Data inside the variable
-    - Attribute of a class.
     - Can belong to the object or the class itself.
         - Instance Variables - belong to object
         - Class Variables - belong to class
-- Methods - functions of a class vs functions that are independent.
-    - Attribute of a class.
-    - Functions always get Python's variable of `self`, and is written `def my_func(self, other vars):`
-- Namespaces - Variables that are valid ONLY within the context of the class or object that owns them.
+
+- **Methods** - aka functions
+    - Functions always get Python's variable of `self`, and is written `def my_func(self, other vars):` if it's part of a class.
+
+- **Namespaces** - Variables that are valid ONLY within the context of the class or object that owns them.
 
 ## The `Self`
 - Class methods have the class before the function, like `class.function()` and there is always a variable added by Python called `self`.
