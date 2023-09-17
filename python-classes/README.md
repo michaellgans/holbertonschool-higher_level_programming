@@ -7,18 +7,20 @@
     - Similar to `int` can be a data type of a variable.
     - Example: Robots are the type of object talked about in the program.
 
+- **Attributes** - stores data `my_class.height`
+
 - **Objects** - Creates a new instance (piece) of a class.
     - Similar to `x` can be a variable.
     - Belong to the class as an "attribute"
 
-- **Instance** - "part of" a class.
+- **Instance** - "part of" a class, synonymous with object
 
 - **Fields** - Data inside the variable
     - Can belong to the object or the class itself.
         - Instance Variables - belong to object
         - Class Variables - belong to class
 
-- **Methods** - aka functions
+- **Methods** - aka functions, provides behavior `my_class.calculate_area()`
     - Functions always get Python's variable of `self`, and is written `def my_func(self, other vars):` if it's part of a class.
 
 - **Namespaces** - Variables that are valid ONLY within the context of the class or object that owns them.
@@ -38,6 +40,11 @@ class my_class
 """ Documentation """
     fields and methods of classes are indented
 ```
+## Private vs Public
+- Private is defined by previxing a single underscore before the variable. `_var`
+    - This means, don't manipulate the variable...
+    - The current number of robots in the example would be private, because it should only be manipulated by the other parts of the program, not manually changed.
+
 ### Robot Example
 ```
 class Robot:
@@ -120,3 +127,4 @@ We have 0 robots.
 Name | Syntax | Notes
 ---|---|---
 class | `class` | Creates a class
+empty block | `pass` | keeps a class open and empty
