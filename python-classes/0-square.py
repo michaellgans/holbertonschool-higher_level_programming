@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-
+""" Creates a class named Square """
 class Square:
     """
-    Defines a class named Square
+    No fields or methods.
 
     Args:
         None
