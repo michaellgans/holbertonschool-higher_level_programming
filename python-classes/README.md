@@ -1,16 +1,19 @@
 # Classes
 
 ## Object Oriented Programming
-- Procedure-oriented - a program designed around functions.  
-- Object Oriented - combine data and functionality and wrap it into an "object"
-- Class - creates a new "type"
-    - Just like how int is a data type of a variable
-- Objects - creates a new instance of a class
-    - Just like how x is a variable
-    - Stores data using varaibles that "belong" to the object.
-    - Attribute of a class.
-- Instance - Aka a variable.
-- Fields - data inside the variable is called a "field"
+- **Procedure-oriented** - a program designed around functions.  
+- **Object Oriented** - combine data and functionality and wrap it into an "object"
+- **Class** - Creates a kind of object.
+    - Similar to `int` can be a data type of a variable.
+    - Example: Robots are the type of object talked about in the program.
+
+- **Objects** - Creates a new instance (piece) of a class.
+    - Similar to `x` can be a variable.
+    - Belong to the class as an "attribute"
+
+- **Instance** - "part of" a class.
+------------------------------------------------
+- **Fields** - Data inside the variable
     - Attribute of a class.
     - Can belong to the object or the class itself.
         - Instance Variables - belong to object
