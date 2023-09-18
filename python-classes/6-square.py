@@ -6,8 +6,6 @@ class Square:
     """ Names the class Square """
     def __init__(self, size=0, position=(0, 0)):
         """ Initiazlies the data """
-        self.__size = size
-        self.__position = position
 
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
@@ -20,6 +18,9 @@ class Square:
 
         if position[1] < 0 or position[0] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
+
+        self.__size = size
+        self.__position = position
 
     def area(self):
         """ Calculates the area of the square
