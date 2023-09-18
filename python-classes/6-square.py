@@ -65,13 +65,12 @@ class Square:
 
     def my_print(self):
         """ Prints the square relative to the position """
-        if self.__size == 0:
-            print("")
-            return
-
         if self.__position[1] != 0:
             for x in range(self.__position[1]):
                 print("")
+
+        if self.__size == 0:
+            print("")
         else:
             for y in range(self.__size):
                 if self.__position[0] > 0:
