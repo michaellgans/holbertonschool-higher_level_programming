@@ -51,10 +51,12 @@ class Square:
     @size.setter
     def position(self, value):
 
-        if not isinstance(value, tuple) or position[1] < 0 or position[0] < 0:
+        if not isinstance(value, tuple):
             raise TypeError("position must be a tuple of 2 positive integers")
-
-        self.__size = value  # resets position to value
+        elif self.__position[1] < 0 or self.__position[0] < 0:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        else:
+            self.__size = value  # resets position to value
 
     def my_print(self):
         """ Prints the square relative to the position """
