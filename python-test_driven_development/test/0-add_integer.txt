@@ -40,13 +40,13 @@ Traceback (most recent call last):
 TypeError: a must be an integer
 
 Test: a is NaN
->>> add_integer(None)
+>>> add_integer(float("NaN"))
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
 
 Test: b is NaN
->>> add_integer(1, None)
+>>> add_integer(1, float("NaN"))
 Traceback (most recent call last):
 ...
 TypeError: b must be an integer
