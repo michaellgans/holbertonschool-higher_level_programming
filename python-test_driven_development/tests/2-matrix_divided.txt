@@ -1,0 +1,41 @@
+Test file for 2-matrix_divided.txt
+
+Function: matrix_divided()
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Test: matrix contains all integers
+    >>> matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+    >>> matrix_divided(matrix, 2)
+    [[.5, 1.0, 1.5], [2.0, 2.5, 3.0], [3.5, 4.0, 4.5]]
+
+Test: matrix is None
+    >>> matrix = None
+    >>> matrix_divided(matrix, 2)
+    Traceback (most recent call last):
+        ...
+    TypeError: 'NoneType' object is not subscriptable
+
+Test: matrix is empty
+    >>> matrix_divided(, 2)
+    Traceback (most recent call last):
+        ...
+    SyntaxError: invalid syntax
+
+Test: divisor is empty
+    >>> matrix_divided([[1, 2], [1, 2]])
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+Test: columns are different lengths
+    >>> matrix = [[1], [1, 2]]
+    >>> matrix_divided(matrix, 1)
+    Traceback (most recent call last):
+        ...
+    TypeError: Each row of the matrix must have the same size
+
+Test: divisor is 0
+>>> matrix_divided([[1, 2], [2, 3]], 0)
+Traceback (most recent call last):
+    ...
+ZeroDivisionError: division by zero
