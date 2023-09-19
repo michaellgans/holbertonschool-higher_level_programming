@@ -42,4 +42,4 @@ class Rectangle:
         elif value < 0:
             raise ValueError("height must be >= 0")
         else:
-            self.__height = int(value)
+            self.__height = value
