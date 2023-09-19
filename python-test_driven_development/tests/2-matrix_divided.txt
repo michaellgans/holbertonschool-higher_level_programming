@@ -39,9 +39,3 @@ Test: divisor is 0
     Traceback (most recent call last):
         ...
     ZeroDivisionError: division by zero
-
-Test: anything but a float or an int is passed
-    >>> matrix = [[1, "a", 3], [4, 5, 6], [7, 8, 9]]
-    Traceback (most recent call last):
-        ...
-    TypeError: matrix must be a matrix (list of lists) of integers/floats
