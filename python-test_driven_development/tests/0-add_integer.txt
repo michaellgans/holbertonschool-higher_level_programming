@@ -1,0 +1,40 @@
+Test file for 0-add_integer
+
+Function: add_integer()
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Test: both are positive integers
+>>> add_integer(2, 2)
+4
+
+Test: both are negative integers
+>>> add_integer(-2, -2)
+-4
+
+Test: both are positive floats
+>>> add_integer(2.2, 2.2)
+4
+
+Test: both are negative floats
+>>> add_integer(-2.2, -2.2)
+-4
+
+Test: only one argument, assume it's a
+>>> add_integer(2)
+100
+
+Test: b isn't given
+>>> add_integer(2,)
+100
+
+Test: a is an int and b is a string
+>>> add_integer(2, "string")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+Test: b is an int and a is a string
+>>> add_integer("string", 2)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
