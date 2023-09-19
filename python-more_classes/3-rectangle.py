@@ -17,7 +17,7 @@ class Rectangle:
     def __str__(self):
         """ For printing """
         if self.height == 0 or self.width == 0:
-            return 0
+            return ("")
         else:
             result = ""
             for x in range(self.height):
@@ -29,7 +29,7 @@ class Rectangle:
 
     def my_print(self):
         if self.height == 0 or self.width == 0:
-            return 0
+            return ("")
         else:
             for x in range(self.height):
                 for y in range(self.width):
