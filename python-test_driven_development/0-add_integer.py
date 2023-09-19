@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 """Adds two integers or floats together"""
 
+
 def add_integer(a, b=98):
-    """ 
+    """
     Args:
         a: int or float
         b: int or float
 
-    Raises: 
+    Raises:
         TypeError if either a or be are not int or float
 
     Return:
@@ -19,10 +20,10 @@ def add_integer(a, b=98):
     if isinstance(b, float):
         b = int(b)
 
-    if not isinstance(a, int) or not isinstance(a, float):
+    if not isinstance(a, int):
         raise TypeError("a must be an integer")
 
-    if not isinstance(b, int) or not isinstance(b, float):
+    if not isinstance(b, int):
         raise TypeError("b must be an integer")
-    
+
     return a + b
