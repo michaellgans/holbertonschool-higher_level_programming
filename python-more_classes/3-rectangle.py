@@ -16,19 +16,25 @@ class Rectangle:
 
     def __str__(self):
         """ For printing """
-        result = ""
-        for x in range(self.height):
-            for y in range(self.width):
-                result += "#"
-            if x < self.height - 1:
-                result += "\n"
+        if self.height == 0 or self.width == 0:
+            return 0
+        else:
+            result = ""
+            for x in range(self.height):
+                for y in range(self.width):
+                    result += "#"
+                if x < self.height - 1:
+                    result += "\n"
         return result
 
     def my_print(self):
-        for x in range(self.height):
-            for y in range(self.width):
-                print("#", end="")
-            print("")
+        if self.height == 0 or self.width == 0:
+            return 0
+        else:
+            for x in range(self.height):
+                for y in range(self.width):
+                    print("#", end="")
+                print("")
 
     @property
     def width(self):
