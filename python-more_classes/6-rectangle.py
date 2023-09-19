@@ -14,6 +14,7 @@ class Rectangle:
         """
         self.height = height
         self.width = width
+        Rectangle.number_of_instances += 1
 
     def __str__(self):
         """ For printing """
@@ -33,6 +34,7 @@ class Rectangle:
 
     def __del__(self):
         print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
 
     def my_print(self):
         if self.height == 0 or self.width == 0:
