@@ -1,0 +1,20 @@
+Test file for 3-say_my_name.txt
+
+Function: say_my_name()
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Test: Both first and last names are strings
+    >>> say_my_name("Michael", "Gans")
+    My name is Michael Gans
+
+Test: First name is an int
+    >>> say_my_name(18, "Gans")
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string
+
+Test: Last name is an int
+    >>> say_my_name("Michael", 18)
+    Traceback (most recent call last):
+        ...
+    TypeError: last_name must be a string
