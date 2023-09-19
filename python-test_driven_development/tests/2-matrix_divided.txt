@@ -35,7 +35,14 @@ Test: columns are different lengths
     TypeError: Each row of the matrix must have the same size
 
 Test: divisor is 0
->>> matrix_divided([[1, 2], [2, 3]], 0)
-Traceback (most recent call last):
-    ...
-ZeroDivisionError: division by zero
+    >>> matrix_divided([[1, 2], [2, 3]], 0)
+    Traceback (most recent call last):
+        ...
+    ZeroDivisionError: division by zero
+
+Test: anything but a float or an int is passed
+    >>> matrix = [[1, "a", 3], [4, 5, 6], [7, 8, 9]]
+    >>> matrix_divided(matrix, 2)
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats

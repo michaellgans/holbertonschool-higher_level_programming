@@ -21,6 +21,12 @@ def matrix_divided(matrix, div):
     if not matrix:
         raise SyntaxError("invalid syntax")
 
+    for row in matrix:
+        for element in row:
+            if not isinstance(element, (int, float)):
+                raise TypeError("matrix must be a matrix \
+                                (list of lists) of integers/floats")
+
     if not all(len(row) == num_columns for row in matrix):
         raise TypeError("Each row of the matrix must have the same size")
 
