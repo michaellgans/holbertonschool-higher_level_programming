@@ -17,6 +17,10 @@ class Rectangle:
         self.width = width
         Rectangle.number_of_instances += 1
 
+    @classmethod
+    def square(cls, size=0):
+        return cls(size, size)
+
     def __str__(self):
         """ For printing """
         if self.height == 0 or self.width == 0:
@@ -100,7 +104,3 @@ class Rectangle:
                 return rect_1
             else:
                 return rect_2
-
-    @classmethod
-    def square(cls, size=0):
-        return cls(size, size)
