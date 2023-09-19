@@ -6,7 +6,7 @@ def text_indentation(text):
     """
     Arguments:
         text (str): text to split up
-    
+
     Raises:
         TypeError: if text is not a string
     """
