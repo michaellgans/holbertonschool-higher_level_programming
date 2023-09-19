@@ -1,6 +1,21 @@
 #!/usr/bin/python3
-def matrix_divided(matrix, div):
+""" Divides a matrix by div """
 
+
+def matrix_divided(matrix, div):
+    """
+        Args:
+            matrix (list of list): ints and floats only
+
+        Raises:
+            TypeError: if not a list of list of ints or floats
+            TypeError: if each row isn't the same length
+            ZeroDivisionError: if div is equal to 0
+
+        Return:
+            a new matrix where all elements are divided by
+            div and rounded to 2 decimal places
+        """
     num_columns = len(matrix[0])
 
     if not matrix:
