@@ -1,29 +1,29 @@
 Test file for 5-text_indentation
 
-Function: text_indentation()
-    >>>text_indentation = __import__('5-text_indentation').text_indentation
+Function: text_indentation
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
 
-    Test: text is a string
-        >>>text_indentation("Michael")
-        Michael
+Test: text is a string
+    >>> text_indentation("Michael")
+    Michael
     
-    Test: not a string
-        >>>text_indentation(30)
-        Traceback (most recent call last):
-            ...
-        TypeError: text must be a string
-
-    Test: blank lines
-        >>>text_indentation("Michael:      Gans?    Yay.)
-        Michael:
-        <blank>
-        Gans?
-        <blank>
-        Yay.
-        <blank>
-
-    Test: missing argument
-    >>> test_indentation()
+Test: not a string
+    >>> text_indentation(30)
     Traceback (most recent call last):
         ...
-    TypeError: text_indentation() missing 1 requred positional argument: "text"
+    TypeError: text must be a string
+
+Test: blank lines
+    >>> text_indentation("Michael:      Gans?    Yay.")
+    Michael:
+    <BLANKLINE>
+    Gans?
+    <BLANKLINE>
+    Yay.
+    <BLANKLINE>
+
+Test: missing argument
+>>> test_indentation()
+Traceback (most recent call last):
+    ...
+TypeError: text_indentation() missing 1 requred positional argument: "text"
