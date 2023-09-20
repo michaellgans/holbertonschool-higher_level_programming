@@ -39,3 +39,10 @@ Test: divisor is 0
     Traceback (most recent call last):
         ...
     ZeroDivisionError: division by zero
+
+Test: not all are integers
+    >>> matrix = [[2, 3, 4], [2, 3, "3"]]
+    >>> matrix_divided(matrix, 2)
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats

@@ -1,0 +1,76 @@
+#!/bin/bash
+
+# new_file_name: the name of the unittest file you're creating WITH file extension
+# my_file: the name of the file you're testing WITHOUT file extension
+# my_func: the name of the function you're testing
+# my_test: variable that holds the data to test
+
+# TO MAKE: my_data, my_answer, error_library
+
+printf "New File Name:\t"
+read new_file_name
+printf "What is the name of the file you're testing? Ex. (0-print_square):\t"
+read my_file
+printf "What is your function's name? Ex. (print_square):\t"
+read my_func
+printf "What is the variable for your tests? Ex. (test_data):\t"
+read my_test
+
+# Writes intro to file and creates class
+# The class will always be called TestClass
+echo "#!/usr/bin/python3" > $new_file_name
+echo -e "\"\"\" Unittest for $my_func \"\"\"\n" >> $new_file_name
+echo "import unittest" >> "$new_file_name"
+echo -e "$my_func = __import__(\"$my_file\").$my_func\n\n" >> $new_file_name
+echo "class TestClass(unittest.TestCase):" >> $new_file_name
+echo "\"\"\" Class for testing $my_func \"\"\"" >> $new_file_name
+
+#### How to input specific data automatically coming soon ####
+
+#writes prototype for first test
+echo -e "\tdef test_normal_behavior(self):" >> $new_file_name
+echo -e "\t\t\"\"\" Documentation \"\"\"" >> $new_file_name
+echo -e "\t\t$my_test = YOUR DATA HERE" >> $new_file_name
+echo -e "\t\tself.assertEqual($my_func($my_test), YOUR ANSWER HERE)\n" >> $new_file_name
+
+#writes prototype for second test
+echo -e "\tdef test_wrong_type(self):" >> $new_file_name
+echo -e "\t\t\"\"\" Documentation \"\"\"" >> $new_file_name
+echo -e "\t\t$my_test = YOUR DATA HERE" >> $new_file_name
+echo -e "\t\tself.assertEqual($my_func($my_test), YOUR ANSWER HERE)\n" >> $new_file_name
+
+#writes prototype for third test
+echo -e "\tdef test_one_arg_missing(self):" >> $new_file_name
+echo -e "\t\t\"\"\" Documentation \"\"\"" >> $new_file_name
+echo -e "\t\t$my_test = YOUR DATA HERE" >> $new_file_name
+echo -e "\t\tself.assertEqual($my_func($my_test), YOUR ANSWER HERE)\n" >> $new_file_name
+
+#writes prototype for fourth test
+echo -e "\tdef test_all_args_missing(self):" >> $new_file_name
+echo -e "\t\t\"\"\" Documentation \"\"\"" >> $new_file_name
+echo -e "\t\t$my_test = YOUR DATA HERE" >> $new_file_name
+echo -e "\t\tself.assertEqual($my_func($my_test), YOUR ANSWER HERE)\n" >> $new_file_name
+
+#writes prototype for fifth test
+echo -e "\tdef test_data_out_of_range(self):" >> $new_file_name
+echo -e "\t\t\"\"\" Documentation \"\"\"" >> $new_file_name
+echo -e "\t\t$my_test = YOUR DATA HERE" >> $new_file_name
+echo -e "\t\tself.assertEqual($my_func($my_test), YOUR ANSWER HERE)\n" >> $new_file_name
+
+#writes prototype for sixth test
+echo -e "\tdef test_None_passed(self):" >> $new_file_name
+echo -e "\t\t\"\"\" Documentation \"\"\"" >> $new_file_name
+echo -e "\t\t$my_test = YOUR DATA HERE" >> $new_file_name
+echo -e "\t\tself.assertEqual($my_func($my_test), YOUR ANSWER HERE)\n" >> $new_file_name
+
+#writes prototype for seventh test
+echo -e "\tdef test_optional(self):" >> $new_file_name
+echo -e "\t\t\"\"\" Documentation \"\"\"" >> $new_file_name
+echo -e "\t\t$my_test = YOUR DATA HERE" >> $new_file_name
+echo -e "\t\tself.assertEqual($my_func($my_test), YOUR ANSWER HERE)\n" >> $new_file_name
+
+#makes new file executable
+chmod u+x "$new_file_name"
+
+#opens new file
+vi "$new_file_name"
