@@ -6,6 +6,8 @@
 # my_test: variable that holds the data to test
 
 # TO MAKE: my_data, my_answer, error_library
+# TO DO:  I'm working on some kind of choices tree that will prompt you for
+#          What tests you'd like to run, then finds the corresponding error.
 
 printf "New File Name:\t"
 read new_file_name
@@ -27,43 +29,43 @@ echo "\"\"\" Class for testing $my_func \"\"\"" >> $new_file_name
 
 #### How to input specific data automatically coming soon ####
 
-#writes prototype for first test
+# Writes a test for normal behavior
 echo -e "\tdef test_normal_behavior(self):" >> $new_file_name
 echo -e "\t\t\"\"\" Documentation \"\"\"" >> $new_file_name
 echo -e "\t\t$my_test = YOUR DATA HERE" >> $new_file_name
 echo -e "\t\tself.assertEqual($my_func($my_test), YOUR ANSWER HERE)\n" >> $new_file_name
 
-#writes prototype for second test
+# Writes a test for wrong type
 echo -e "\tdef test_wrong_type(self):" >> $new_file_name
 echo -e "\t\t\"\"\" Documentation \"\"\"" >> $new_file_name
 echo -e "\t\t$my_test = YOUR DATA HERE" >> $new_file_name
 echo -e "\t\tself.assertEqual($my_func($my_test), YOUR ANSWER HERE)\n" >> $new_file_name
 
-#writes prototype for third test
+# Writes a test for the function missing one argument
 echo -e "\tdef test_one_arg_missing(self):" >> $new_file_name
 echo -e "\t\t\"\"\" Documentation \"\"\"" >> $new_file_name
 echo -e "\t\t$my_test = YOUR DATA HERE" >> $new_file_name
 echo -e "\t\tself.assertEqual($my_func($my_test), YOUR ANSWER HERE)\n" >> $new_file_name
 
-#writes prototype for fourth test
+# Writes a test for the function missing ALL arguments
 echo -e "\tdef test_all_args_missing(self):" >> $new_file_name
 echo -e "\t\t\"\"\" Documentation \"\"\"" >> $new_file_name
 echo -e "\t\t$my_test = YOUR DATA HERE" >> $new_file_name
 echo -e "\t\tself.assertEqual($my_func($my_test), YOUR ANSWER HERE)\n" >> $new_file_name
 
-#writes prototype for fifth test
+# Writes a test for when the data is out of range in the context of the program
 echo -e "\tdef test_data_out_of_range(self):" >> $new_file_name
 echo -e "\t\t\"\"\" Documentation \"\"\"" >> $new_file_name
 echo -e "\t\t$my_test = YOUR DATA HERE" >> $new_file_name
 echo -e "\t\tself.assertEqual($my_func($my_test), YOUR ANSWER HERE)\n" >> $new_file_name
 
-#writes prototype for sixth test
+# Writes a test for when None is passed to the function
 echo -e "\tdef test_None_passed(self):" >> $new_file_name
 echo -e "\t\t\"\"\" Documentation \"\"\"" >> $new_file_name
 echo -e "\t\t$my_test = YOUR DATA HERE" >> $new_file_name
 echo -e "\t\tself.assertEqual($my_func($my_test), YOUR ANSWER HERE)\n" >> $new_file_name
 
-#writes prototype for seventh test
+# Writes a test for something else!
 echo -e "\tdef test_optional(self):" >> $new_file_name
 echo -e "\t\t\"\"\" Documentation \"\"\"" >> $new_file_name
 echo -e "\t\t$my_test = YOUR DATA HERE" >> $new_file_name
