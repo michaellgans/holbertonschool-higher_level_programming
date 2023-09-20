@@ -3,12 +3,8 @@ Test file for 4-print_square.py
 Function: print_square()
     >>> print_square = __import__('4-print_square').print_square
 
-Test: Both first and last names are strings
-    >>> say_my_name("Michael", "Gans")
-    My name is Michael Gans
-
-Test: First name is an int
-    >>> say_my_name(18, "Gans")
-    Traceback (most recent call last):
-        ...
-    TypeError: first_name must be a string
+Test: positive int
+>>> print_square(3)
+###
+###
+###
