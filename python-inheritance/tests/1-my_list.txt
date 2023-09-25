@@ -32,3 +32,12 @@ Test: only one element
 >>> my_list = MyList(["a", "b", "c"])
 >>> my_list.print_sorted()
 ['a', 'b', 'c']
+
+Test: without changing original list
+>>> my_list = MyList([2, 1, 3])
+>>> print(my_list)
+[2, 1, 3]
+>>> my_list.print_sorted()
+[1, 2, 3]
+>>> print(my_list)
+[2, 1, 3]
