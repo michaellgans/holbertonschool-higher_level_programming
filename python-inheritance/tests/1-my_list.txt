@@ -23,12 +23,12 @@ Test: only one element
 >>> my_list.print_sorted()
 [2]
 
-Test: only one element
+Test: NO elements
 >>> my_list = MyList([])
 >>> my_list.print_sorted()
 []
 
-Test: only one element
+Test: only strings
 >>> my_list = MyList(["a", "b", "c"])
 >>> my_list.print_sorted()
 ['a', 'b', 'c']
