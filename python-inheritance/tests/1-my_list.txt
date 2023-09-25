@@ -27,3 +27,8 @@ Test: only one element
 >>> my_list = MyList([])
 >>> my_list.print_sorted()
 []
+
+Test: only one element
+>>> my_list = MyList(["a", "b", "c"])
+>>> my_list.print_sorted()
+['a', 'b', 'c']
