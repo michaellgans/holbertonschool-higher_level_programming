@@ -1,0 +1,29 @@
+Test for 1-my_list.py
+
+Function to test:   print_sorted()
+>>> MyList = __import__("1-my_list").MyList
+
+Test: all elements of list are positive ints
+>>> my_list = MyList([2, 1, 3])
+>>> my_list.print_sorted()
+[1, 2, 3]
+
+Test: all elements of list are negative ints
+>>> my_list = MyList([-2, -1, -3])
+>>> my_list.print_sorted()
+[-3, -2, -1]
+
+Test: one element in the list is negative
+>>> my_list = MyList([2, -1, 3])
+>>> my_list.print_sorted()
+[-1, 2, 3]
+
+Test: only one element
+>>> my_list = MyList([2])
+>>> my_list.print_sorted()
+[2]
+
+Test: only one element
+>>> my_list = MyList([])
+>>> my_list.print_sorted()
+[]
