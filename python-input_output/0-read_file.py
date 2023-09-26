@@ -7,5 +7,4 @@ def read_file(filename=""):
     if not isinstance(filename, str):
         raise Exception("filename must be a string")
     with open("my_file_0.txt", encoding="utf-8") as file:
-        file_contents = file.read()
-        print(file_contents, end="")
+        print(file.read(), end="")
