@@ -1,6 +1,6 @@
 # Inheritance
 
--  The subclass inherits methods from the superclass, but it doesn't automatically execute that method when an instance of the subclass is created. If you want to use the logic from a method in the subclass's __init__ method, you need to call it explicitly.
+-  The subclass inherits methods from the superclass, but it doesn't automatically execute that method when an instance of the subclass is created. If you want to use the logic from a method in the subclass's __init__ method, you need to call it explicitly.  
 
 
 ## FYSK

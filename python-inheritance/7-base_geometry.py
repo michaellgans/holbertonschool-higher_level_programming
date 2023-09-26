@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" Creates a class """
+""" Task 7 """
 
 
 class BaseGeometry:
-    """ Empty Class """
+    """ Superclass for Rectangle and Square """
     def area(self):
         """ Area of something """
         raise Exception("area() is not implemented")
@@ -16,3 +16,4 @@ class BaseGeometry:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
+        return True
