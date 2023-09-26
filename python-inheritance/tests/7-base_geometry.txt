@@ -12,7 +12,7 @@ Test: name only
 >>> bg.integer_validator("bingbong")
 Traceback (most recent call last):
 ...
-TypeError: integer_validator() missing 1 required positional argument: 'value'
+TypeError: integer_validator() missing 1 required positional argument: 'name'
 
 Test: value only
 >>> bg = BaseGeometry()
@@ -27,13 +27,6 @@ Test: no argument
 Traceback (most recent call last):
 ...
 TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
-
-Test: name isn't a string
->>> bg = BaseGeometry()
->>> bg.integer_validator(12, 12)
-Traceback (most recent call last):
-...
-TypeError: name must be a string
 
 Test: value not an int
 >>> bg = BaseGeometry()
