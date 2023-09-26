@@ -3,79 +3,71 @@ Test for 7-base_geometry.py
 Function to test: integer_validator()
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
-Test: name = string/value = positive int
+*** Show type ***
 >>> bg = BaseGeometry()
->>> bg.integer_validator("bingbong", 12)
+>>> type(bg)
+<class '7-base_geometry.BaseGeometry'>
 
-Test: name only
->>> bg = BaseGeometry()
->>> bg.integer_validator("bingbong")
+*** No arguments for BaseGeometry ***
+>>> bg = BaseGeometry(None)
 Traceback (most recent call last):
 ...
-TypeError: integer_validator() missing 1 required positional argument: 'name'
+TypeError: object() takes no parameters
 
-Test: value only
->>> bg = BaseGeometry()
->>> bg.integer_validator(12)
-Traceback (most recent call last):
-...
-TypeError: integer_validator() missing 1 required positional argument: 'name'
-
-Test: no argument
->>> bg = BaseGeometry()
->>> bg.integer_validator()
-Traceback (most recent call last):
-...
-TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
-
-Test: value not an int
->>> bg = BaseGeometry()
->>> bg.integer_validator("bingbong", 3.4)
-Traceback (most recent call last):
-...
-ValueError: bingbong must be an integer
-
->>> bg = BaseGeometry()
->>> bg.integer_validator("bingbong", "2")
-Traceback (most recent call last):
-...
-ValueError: bingbong must be an integer
-
->>> bg = BaseGeometry()
->>> bg.integer_validator("bingbong", (3.4, 4.5))
-Traceback (most recent call last):
-...
-ValueError: bingbong must be an integer
-
->>> bg = BaseGeometry()
->>> bg.integer_validator("bingbong", {1, 2})
-Traceback (most recent call last):
-...
-ValueError: bingbong must be an integer
-
->>> bg = BaseGeometry()
->>> bg.integer_validator("bingbong", None)
-Traceback (most recent call last):
-...
-ValueError: bingbong must be an integer
-
-Test: value less than 0
->>> bg = BaseGeometry()
->>> bg.integer_validator("bingbong", -1)
-Traceback (most recent call last):
-...
-ValueError: bingbong must be greater than 0
-
-Test: value less than 0
->>> bg = BaseGeometry()
->>> bg.integer_validator("bingbong", 0)
-Traceback (most recent call last):
-...
-ValueError: bingbong must be greater than 0
-
-Test: calling area
->>> bg = BaseGeometry()
+*** Area Method ***
 >>> bg.area()
 Traceback (most recent call last):
 ...
 Exception: area() is not implemented
+
+*** Integer Validator Method ***
+
+Expected behavior:
+>>> bg.integer_validator("name", 2)
+
+Unacceptable behavior:
+>>> bg.integer_validator("name", "name")
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+
+>>> bg.integer_validator("name", False)
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+
+>>> bg.integer_validator("name", {1, 2})
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+
+>>> bg.integer_validator("name", (1, 2))
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+
+>>> bg.integer_validator("name", [1, 2])
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+
+>>> bg.integer_validator("name", None)
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+
+>>> bg.integer_validator("name", -2)
+Traceback (most recent call last):
+...
+ValueError: name must be greater than 0
+
+>>> bg.integer_validator("name", 0)
+Traceback (most recent call last):
+...
+ValueError: name must be greater than 0
+
+Both Arguments Missing
+>>> bg.integer_validator()
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
