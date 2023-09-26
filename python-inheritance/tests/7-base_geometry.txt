@@ -33,18 +33,56 @@ Test: name isn't a string
 >>> bg.integer_validator(12, 12)
 Traceback (most recent call last):
 ...
-TypeError: <name> must be a string
+TypeError: name must be a string
 
 Test: value not an int
 >>> bg = BaseGeometry()
 >>> bg.integer_validator("bingbong", 3.4)
 Traceback (most recent call last):
 ...
-ValueError: <name> must be an integer
+ValueError: bingbong must be an integer
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("bingbong", "2")
+Traceback (most recent call last):
+...
+ValueError: bingbong must be an integer
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("bingbong", (3.4, 4.5))
+Traceback (most recent call last):
+...
+ValueError: bingbong must be an integer
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("bingbong", {1, 2})
+Traceback (most recent call last):
+...
+ValueError: bingbong must be an integer
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("bingbong", None)
+Traceback (most recent call last):
+...
+ValueError: bingbong must be an integer
 
 Test: value less than 0
 >>> bg = BaseGeometry()
 >>> bg.integer_validator("bingbong", -1)
 Traceback (most recent call last):
 ...
-ValueError: <name> must be greater than 0
+ValueError: bingbong must be greater than 0
+
+Test: value less than 0
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("bingbong", 0)
+Traceback (most recent call last):
+...
+ValueError: bingbong must be greater than 0
+
+Test: calling area
+>>> bg = BaseGeometry()
+>>> bg.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
