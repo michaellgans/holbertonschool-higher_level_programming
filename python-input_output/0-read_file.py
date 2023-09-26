@@ -3,8 +3,7 @@
 
 
 def read_file(filename=""):
-    """ Reads a file with a with statement """
-    if not isinstance(filename, str):
-        raise Exception("filename must be a string")
-    with open("my_file_0.txt", encoding="utf-8") as file:
-        print(file.read(), end="")
+    """ Reads a file and prints to standard output """
+    with open(filename, encoding="UTF-8") as file:
+        bytes_read = file.read()
+        print(bytes_read, end="")
