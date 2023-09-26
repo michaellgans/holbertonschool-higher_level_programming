@@ -1,0 +1,50 @@
+Test for 7-base_geometry.py
+
+Function to test: integer_validator()
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Test: name = string/value = positive int
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("bingbong", 12)
+
+Test: name only
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("bingbong")
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+Test: value only
+>>> bg = BaseGeometry()
+>>> bg.integer_validator(12)
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 1 required positional argument: 'name'
+
+Test: no argument
+>>> bg = BaseGeometry()
+>>> bg.integer_validator()
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+Test: name isn't a string
+>>> bg = BaseGeometry()
+>>> bg.integer_validator(12, 12)
+Traceback (most recent call last):
+...
+TypeError: <name> must be a string
+
+Test: value not an int
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("bingbong", 3.4)
+Traceback (most recent call last):
+...
+ValueError: <name> must be an integer
+
+Test: value less than 0
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("bingbong", -1)
+Traceback (most recent call last):
+...
+ValueError: <name> must be greater than 0
