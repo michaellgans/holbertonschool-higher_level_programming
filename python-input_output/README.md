@@ -28,3 +28,5 @@ Syntax | Notes
 `file_object.close()` | to close a file when you're finished
 `file_object.read([n])` | to read from a file where n is the bytes of data.  if you leave it blank, it reads the whole file.
 `file_object.readlines()` | reads all the lines and returns them as a list of elements
+`json.loads()` | json string representation
+`json.dump()` | json representation of a dict
