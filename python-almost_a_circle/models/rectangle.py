@@ -84,7 +84,7 @@ class Rectangle(Base):
         """ Retrieves y of rectangle """
         return self.__y
 
-    @x.setter
+    @y.setter
     def y(self, value):
         """ Sets y of rectangle """
 
@@ -120,9 +120,8 @@ class Rectangle(Base):
         if args:
             attributes = ["id", "width", "height", "x", "y"]
 
-            for i, arg in enumerate(args):
-                if i < len(attributes):
-                    setattr(self, attributes[i], args[i])
+            for i in range(len(args)):
+                setattr(self, attrs[i], args[i])
         elif kwargs:
             for key, value in kwargs.items():
                 setattr(self, key, value)
