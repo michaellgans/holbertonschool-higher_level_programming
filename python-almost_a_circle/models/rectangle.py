@@ -16,6 +16,18 @@ class Rectangle(Base):
         self.y = y
         self.x = x
 
+    def __str__(self):
+        """ overrides str method """
+        if self.__height == 0 or self.__width == 0:
+            return ""
+        else:
+            id = self.id
+            x = self.__x
+            y = self.__y
+            height = self.__height
+            width = self.__width
+            return f"[Rectangle] ({id}) {x}/{y} - {width}/{height}"
+
     @property
     def width(self):
         """ Retrieves width of rectangle """
