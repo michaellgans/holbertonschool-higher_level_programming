@@ -115,12 +115,14 @@ class Rectangle(Base):
                 print(" " * self.__x, end="")
                 print("#" * self.__width)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ Defines which args are at what position """
-        attributes = ["id", "width", "height", "x", "y"]
+        if args:
+            attributes = ["id", "width", "height", "x", "y"]
 
-        for i, arg in enumerate(args):
-            if i < len(attributes):
-                setattr(self, attributes[i], args[i])
-            else:
-                break
+            for i, arg in enumerate(args):
+                if i < len(attributes):
+                    setattr(self, attributes[i], args[i])
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
