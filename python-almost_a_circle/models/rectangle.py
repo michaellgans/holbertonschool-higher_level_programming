@@ -103,7 +103,7 @@ class Rectangle(Base):
     def display(self):
         """ Displays the rectangle """
         if self.__height == 0 or self.__width == 0:
-            print ("")
+            print("")
             return
         # an underscore as the iterator means
         # that the value of the iterator doesn't
@@ -111,6 +111,6 @@ class Rectangle(Base):
         else:
             for _ in range(self.__y):
                 print()
-            for _ in range(self._height):
+            for _ in range(self.__height):
                 print(" " * self.__x, end="")
-                print("#" *self.__width)
+                print("#" * self.__width)
