@@ -123,6 +123,6 @@ class Rectangle(Base):
             for i, arg in enumerate(args):
                 if i < len(attributes):
                     setattr(self, attributes[i], args[i])
-        else:
+        elif kwargs:
             for key, value in kwargs.items():
                 setattr(self, key, value)
