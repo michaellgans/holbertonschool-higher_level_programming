@@ -98,11 +98,11 @@ class Rectangle(Base):
 
     def area(self):
         """ Returns area of Rectangle """
-        return self.__height * self.__width
+        return self.height * self.width
 
     def display(self):
         """ Displays the rectangle """
-        if self.__height == 0 or self.__width == 0:
+        if self.height == 0 or self.width == 0:
             print("")
             return
         # an underscore as the iterator means

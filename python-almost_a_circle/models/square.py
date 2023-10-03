@@ -13,7 +13,7 @@ class Square(Rectangle):
 
     def __str__(self):
         """ Overwrites Str """
-        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"
+        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width)
 
     @property
     def size(self):
@@ -24,19 +24,13 @@ class Square(Rectangle):
     def size(self, value):
         """ Sets width of square """
 
-        if not isinstance(value, int):
-            raise TypeError("width must be an integer")
-
-        if value <= 0:
-            raise ValueError("width must be > 0")
-
-        self.__width = value
-        self.__height = value
+        self.width = value
+        self.height = value
 
     def update(self, *args, **kwargs):
         """ Defines which args are at what position """
         if args:
-            attributes = ["id", "size", "x", "y"]
+            attributes = ["id", "__size", "__x", "__y"]
 
             for i, arg in enumerate(args):
                 if i < len(attributes):
