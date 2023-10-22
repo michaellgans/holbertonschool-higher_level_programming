@@ -1,5 +1,5 @@
 -- Creates a table table
 CREATE TABLE first_table (
     id INT,
-    name VARCHAR(256),
+    name VARCHAR(256)
 );
