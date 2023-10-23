@@ -1,0 +1,2 @@
+-- List privileges from all users
+SELECT * FROM INFORMATION_SCHEMA.USER_PRIVILEGES;
