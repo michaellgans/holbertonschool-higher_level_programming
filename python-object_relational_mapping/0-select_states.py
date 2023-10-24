@@ -16,7 +16,7 @@ def all_states():
     cursor = DB.cursor()
 
     """ Inject SQL Query """
-    cursor.execute("SELECT * FROM states ORDER BY id")
+    cursor.execute("SELECT * FROM states ORDER BY id ASC")
 
     """ Grab the results of the Query """
     states = cursor.fetchall()
