@@ -5,7 +5,7 @@ import sys
 import MySQLdb
 
 
-def python_query():
+def all_N_states():
     """ Lists all states that start with N from the database """
 
     """ Connect to MySQL """
@@ -16,14 +16,16 @@ def python_query():
     cursor = DB.cursor()
 
     """ Inject SQL Query """
-    cursor.execute("SELECT * FROM states WHERE BINARY
-                   name LIKE "N%" ORDER BY id")
+    cursor.execute("SELECT id, name \
+                    FROM states \
+                    WHERE name LIKE 'N%' \
+                    ORDER BY id ASC")
 
     """ Grab the results of the Query """
-    result = cursor.fetchall()
+    state = cursor.fetchall()
 
-    for x in result:
-        print(x)
+    for state in states:
+        print(state)
 
     """ Close the connection """
     cursor.close()
@@ -31,4 +33,4 @@ def python_query():
 
 
 if __name__ == "__main__":
-    python_query()
+    all_N_states()
