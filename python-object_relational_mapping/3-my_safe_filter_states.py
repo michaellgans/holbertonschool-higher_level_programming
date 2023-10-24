@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-""" Task 3 """
+""" Task 4 """
 
 import sys
 import MySQLdb
 
 
-def all_states():
-    """ Test SQL injection """
+def all_cities():
+    """ List all cities """
 
     """ Connect to MySQL """
     DB = MySQLdb.connect(host="localhost", port=3306, user=sys.argv[1],
@@ -16,15 +16,16 @@ def all_states():
     cursor = DB.cursor()
 
     """ Inject SQL Query """
-    cursor.execute("SELECT * FROM states \
-                    WHERE name = %s \
-                    ORDER BY id", (sys.argv[4],))
+    cursor.execute("SELECT cities.id, cities.name, states.name \
+                    FROM cities \
+                    INNER JOIN states ON cities.state_id = states.id \
+                    ORDER BY cities.id ASC")
 
     """ Grab the results of the Query """
-    states = cursor.fetchall()
+    cities = cursor.fetchall()
 
-    for state in states:
-        print(state)
+    for city in cities:
+        print(city)
 
     """ Close the connection """
     cursor.close()
@@ -32,4 +33,4 @@ def all_states():
 
 
 if __name__ == "__main__":
-    all_states()
+    all_cities()
