@@ -21,7 +21,7 @@ def all_N_states():
                     ORDER BY id")
 
     """ Grab the results of the Query """
-    state = cursor.fetchall()
+    states = cursor.fetchall()
 
     for state in states:
         print(state)
