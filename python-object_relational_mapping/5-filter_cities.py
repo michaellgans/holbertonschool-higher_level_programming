@@ -25,8 +25,7 @@ def all_cities():
     """ Grab the results of the Query """
     cities = cursor.fetchall()
 
-    for city in cities:
-        print(city)
+    print(", ".join([record[0] for record in cities]))
 
     """ Close the connection """
     cursor.close()
