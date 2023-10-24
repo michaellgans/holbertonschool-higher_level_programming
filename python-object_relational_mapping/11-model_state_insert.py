@@ -18,7 +18,7 @@ if __name__ == "__main__":
     session.add(new_state)
     item = session.query(State).filter_by(name="Louisiana").first()
     print("{}".format(item.id))
-    
+
     """ Close session """
     session.commit()
     session.close()

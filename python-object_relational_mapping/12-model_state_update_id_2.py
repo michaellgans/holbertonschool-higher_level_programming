@@ -16,7 +16,7 @@ if __name__ == "__main__":
 
     item = session.query(State).filter_by(id="2").first()
     item.name = "New Mexico"
-    
+
     """ Close session """
     session.commit()
     session.close()
