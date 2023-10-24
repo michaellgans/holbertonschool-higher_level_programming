@@ -16,10 +16,9 @@ def all_N_states():
     cursor = DB.cursor()
 
     """ Inject SQL Query """
-    cursor.execute("SELECT id, name \
-                    FROM states \
-                    WHERE name LIKE 'N%' \
-                    ORDER BY id ASC")
+    cursor.execute("SELECT * FROM states \
+                    WHERE BINARY name LIKE 'N%' \
+                    ORDER BY id")
 
     """ Grab the results of the Query """
     state = cursor.fetchall()
