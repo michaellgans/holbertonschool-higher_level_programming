@@ -9,7 +9,7 @@ def all_states():
     """ Lists all states from the database """
 
     """ Connect to MySQL """
-    DB = MySQLdb.connect(host="localhost", port="3306", user=sys.argv[1],
+    DB = MySQLdb.connect(host="localhost", port=3306, user=sys.argv[1],
                          passwd=sys.argv[2], DB=sys.argv[3])
 
     """ Set a cursor """
