@@ -8,10 +8,8 @@ Base = declarative_base()
 
 
 class State(Base):
-    """ Class for state, location for DB """
+    """ Class for city, location for DB """
     __tablename__ = 'states'
-    id = Column(Integer, primary_key=True,
-                nullable=False,
-                autoincrement=True,
-                unique=True)
+    id = Column(Integer, primary_key=True)
     name = Column(String(128), nullable=False)
+    state_id = Column(Integer, ForeignKey("states.id"))
