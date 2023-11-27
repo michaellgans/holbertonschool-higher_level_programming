@@ -1,8 +1,6 @@
 #!/bin/bash
-printf "File to push:\t"
-read F
 printf "Commit Message:\t"
 read M
-git add "$F"
+git add .
 git commit -m "$M"
 git push
