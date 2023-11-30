@@ -3,8 +3,8 @@
 const argv2 = process.argv[2];
 const args = process.argv.slice(2);
 
-if (!argv2 || argv2 === 1) {
-  console.log('0');
+if (!argv2 || argv2 === '1') {
+  console.log(0);
 } else {
   let lastArg = 0;
   let secondToLast = 0;
