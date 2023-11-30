@@ -1,16 +1,15 @@
 #!/usr/bin/node
 
-function add(a, b) {
+function add (a, b) {
+  a = Number(process.argv[2]);
+  b = Number(process.argv[3]);
 
-    a = Number(process.argv[2]);
-    b = Number(process.argv[3]);
-
-    if (!a && !b) {
-      return NaN;
-    }
-    return a + b;
+  if (!a && !b) {
+    return NaN;
+  }
+  return a + b;
 }
 
-let result = add();
+const result = add();
 
 console.log(result);
