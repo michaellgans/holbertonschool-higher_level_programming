@@ -1,6 +1,6 @@
 # holbertonschool-higher_level_programming
 
-This is an update at 4:45 PM.
+This is an update at 4:44 PM
 
 ## New_File
 
