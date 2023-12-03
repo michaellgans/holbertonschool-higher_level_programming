@@ -7,6 +7,15 @@ class Rectangle {
       this.height = h;
     }
   }
+
+  print() {
+    for (let x = 0; x < this.height; x++) {
+      for (let y = 0; y < this.width; y++) {
+        process.stdout.write('X');
+      }
+      console.log()
+    }
+  }
 }
 
 module.exports = Rectangle;
