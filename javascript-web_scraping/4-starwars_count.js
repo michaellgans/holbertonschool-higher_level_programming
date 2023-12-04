@@ -4,8 +4,9 @@ const request = require('request');
 const url = process.argv[2];
 
 request.get(url, function (err, body) {
-  if (err) throw err;
-
+  if (err) {
+    console.error(err);
+  } else {
     /* Changes JSON data to a JS Object */
     /* Results opens up the arrays */
     const dataPull = JSON.parse(body).results;
@@ -21,4 +22,5 @@ request.get(url, function (err, body) {
       }
     }
     console.log(count);
+  }
 });
