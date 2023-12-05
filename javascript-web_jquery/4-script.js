@@ -6,7 +6,7 @@ $(document).ready(function () {
     console.error('There is no header element');
   } else {
     headerElement.on('click', function () {
-      /* Creates a new class named "red" */
+      /* Toggles between red and green classes */
       headerElement.toggleClass('green');
       headerElement.toggleClass('red');
     });
